@@ -11,37 +11,37 @@ app.get('/', (req, res) => {
 });
 
 //define api endpoint for 5 blog posts
-app.get('/bacheca/posts',(req, res) => {
+app.get('/bacheca',(req, res) => {
     const posts = [
         {
-            title: "sdgasdg",
-            content: "asdgasg",
-            image: "asdgasdg",
-            tags: "gasdg"
+            title: "Ciambellone",
+            content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, nesciunt!",
+            image: "/images/ciambellone.jpeg",
+            tags: ["dolce", "tondo"]
         },
         {
-            title: "sdgasdg",
-            content: "asdgasg",
-            image: "asdgasdg",
-            tags: ["gasdg", "gds", "asf", "asfa", "asaf"]
+            title: "Cracker barbabietola",
+            content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, nesciunt!",
+            image: "/images/cracker_barbabietola.jpeg",
+            tags: ["dolce", "cracker"]
         },
         {
-            title: "sdgasdg",
-            content: "asdgasg",
-            image: "asdgasdg",
-            tags: ["gasdg", "gds", "asf", "asfa", "asaf"]
+            title: "Pane fritto dolce",
+            content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, nesciunt!",
+            image: "/images/pane_fritto_dolce.jpeg",
+            tags: ["dolce", "fritto"]
         },
         {
-            title: "sdgasdg",
-            content: "asdgasg",
-            image: "asdgasdg",
-            tags: ["gasdg", "gds", "asf", "asfa", "asaf"]
+            title: "Pasta barbabietola",
+            content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, nesciunt!",
+            image: "/images/pasta_barbabietola.jpeg",
+            tags: ["dolce", "barbabietola"]
         },
         {
-            title: "sdgasdg",
-            content: "asdgasg",
-            image: "asdgasdg",
-            tags: ["gasdg", "gds", "asf", "asfa", "asaf"]
+            title: "Torta paesana",
+            content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, nesciunt!",
+            image: "/images/torta_paesana.jpeg",
+            tags: ["dolce", "torta"]
         }
        
     ];
@@ -52,3 +52,4 @@ app.get('/bacheca/posts',(req, res) => {
 app.listen(PORT, () => {
     console.log(`Server run on port http://localhost:${PORT}`)
 })
+
